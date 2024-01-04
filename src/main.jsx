@@ -8,6 +8,7 @@ import Classic from './Components/ShowIcons/ShowIcons.jsx';
 import ErrorPage from './Components/ErrorPage/ErrorPage.jsx';
 import { GlobalProvider } from './Context/GLobalProvider.jsx';
 import AllIcons from './Components/AllIcons/AllIcons';
+import ShowIcons from './Components/ShowIcons/ShowIcons.jsx';
 
 const router = createBrowserRouter([
   {
@@ -21,8 +22,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/:id",
-        // loader: () => fetch("icons.json"),
-        element: <Classic></Classic>,
+        element: <ShowIcons></ShowIcons>,
       },
 
     ],
